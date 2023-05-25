@@ -1,0 +1,190 @@
+.challenge-header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 10vh;
+  min-height: 4px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  grid-template-columns: 0.3fr 0.7fr 1fr 1fr;
+  padding: 0 2vw;
+  background: orange;
+}
+
+.challenge-header img {
+  height: 35px;
+  width: 50px;
+}
+
+.challenge-header > a {
+  padding: 3px 8px;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-height: 80%;
+}
+
+.challenge-header > a:hover {
+  background-color: black;
+  color: white;
+}
+
+.challenge-header > a:active {
+  background-color: white;
+  color: black;
+}
+
+.challenge-header span {
+  display: grid;
+  justify-items: center;
+  font-weight: 600;
+  font-family: Comforta;
+}
+
+.challenge-header select {
+  border-radius: 5px;
+  font-family: Comforta;
+  font-weight: 600;
+  border-radius: 15px;
+}
+
+.challenge-header > .config-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+
+.challenge-header > .config-btns button {
+  padding: 3px 8px;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid black;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.003);
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  height: 60%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-height: 400px) {
+  .challenge-header {
+    height: 12vh;
+  }
+}
+
+@media (max-height: 320px) {
+  .challenge-header {
+    height: 15vh;
+  }
+}
+
+@media (max-height: 250px) {
+  .challenge-header {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .challenge-header {
+    grid-template-columns: 0.3fr 1.1fr 1fr 1.5fr;
+  }
+  .challenge-header > .config-btns button {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .challenge-header {
+    min-height: 60px;
+    border-bottom: 1px solid black;
+    grid-template-columns: 0.3fr 0.5fr 1fr 0.8fr;
+    padding: 0 1vw;
+    gap: 1vw;
+  }
+  .challenge-header > a,
+  .challenge-header > .config-btns > button {
+    padding: 3px 0;
+    border: 1px solid black;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .challenge-header span {
+    display: grid;
+    justify-items: center;
+    font-weight: 700;
+    font-family: Comforta;
+  }
+
+  .challenge-header select {
+    border-radius: 5px;
+    font-family: Comforta;
+    font-weight: 600;
+  }
+  .challenge-header > .config-btns {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .challenge-header {
+    height: 10vh;
+    min-height: 90px;
+    border-bottom: 1px solid black;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2vw;
+    gap: 1vw;
+    align-items: center;
+  }
+  .challenge-header > a,
+  .challenge-header > button {
+    padding: 3px 0;
+    border: 1px solid black;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .challenge-header span {
+    display: grid;
+    justify-items: center;
+    font-weight: 700;
+    font-family: Comforta;
+  }
+
+  .challenge-header select {
+    border-radius: 5px;
+    font-family: Comforta;
+    font-weight: 600;
+  }
+
+  .next-challenge {
+    display: none;
+  }
+
+  .challenge-header > .config-btns {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    width: 100%;
+    justify-items: center;
+  }
+  .challenge-header > .config-btns button {
+    width: 75%;
+    padding: 0 5px;
+  }
+}

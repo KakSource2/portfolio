@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Cairo;
+  src: url("./assets/Cairo-VariableFont.ttf");
+}
+
+.Weather {
+  --alert-red: rgb(255, 0, 0);
+  --alert-orange: rgb(255, 90, 1);
+  --alert-yellow: rgb(255, 234, 1);
+  --alert-green: rgb(38, 255, 0);
+
+  height: 90vh;
+  color: white;
+  display: grid;
+  align-items: center;
+}
+
+.Weather > main {
+  display: grid;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.701);
+  border-radius: 0 1rem 0 0;
+  border: 3px solid rgba(255, 255, 255, 0.164);
+  color: black;
+  font-family: Cairo;
+}
+
+.Weather > main > .stats {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.Weather > main > .stats > .temp {
+  font-size: 3rem;
+  text-align: center;
+  align-self: center;
+  padding: 5px;
+}
+
+.Weather > main > .stats > .extra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  gap: 2px;
+}
+
+.Weather > main > .stats > .extra > span {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  height: 70px;
+}
+
+.Weather > main > .stats > .extra img {
+  width: 30px;
+}
+
+@media (max-width: 1000px) {
+  .Weather > main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .Weather > main {
+    align-items: center;
+  }
+
+  .Weather > main > .stats > .temp {
+    font-size: 4rem;
+    padding: 5px;
+  }
+
+  .Weather > main > .stats > .extra {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+    gap: 2px;
+  }
+
+  .Weather > main > .stats > .extra > span {
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .Weather > main > .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.2fr;
+  }
+  .Weather > main > .stats > .temp {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,18 @@
+.Movies-footer {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  padding: 3vh 40vw;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.Movies-footer main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.Movies-footer main img {
+  max-width: 50px;
+  height: 100%;
+}

@@ -1,0 +1,13 @@
+.Test {
+  display: grid;
+  height: 88vh;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+}
+
+.Test .form label {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}

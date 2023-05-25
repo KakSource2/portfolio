@@ -1,0 +1,37 @@
+.Header {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  gap: 400px;
+}
+
+.Header img {
+  height: 10vh;
+}
+
+.Header > .btns {
+  display: grid;
+}
+
+.Header > .btns > .header-btns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+
+.Header > .btns > .search-cart {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 25px;
+}
+.Header > .btns > .search-cart > .cart {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Header > .btns > .search-cart > .cart > img {
+  height: 24px;
+}

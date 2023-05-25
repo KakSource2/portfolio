@@ -1,0 +1,75 @@
+.Login {
+  display: grid;
+  height: 95vh;
+  background-color: white;
+  justify-items: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.Login main {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25%;
+  display: grid;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.504);
+  color: white;
+}
+
+.Login span {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.Login input {
+  height: 25px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  padding: 0 3%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Login button {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: crimson;
+}
+
+.Login button:hover {
+  background-color: crimson;
+}
+
+.Login button:active {
+  background-color: green;
+}
+
+.item {
+  border: 1px solid red;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.error {
+  animation: error 3s forwards ease-in-out;
+}
+
+@keyframes error {
+  0% {
+    color: red;
+    background-color: white;
+  }
+  100% {
+    background-color: crimson;
+    color: black;
+  }
+}

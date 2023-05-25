@@ -1,0 +1,40 @@
+.FCCTributePage {
+  overflow: auto;
+  background-color: white;
+  display: grid;
+  justify-items: center;
+  height: 50%;
+}
+
+.FCCTributePage > section > main {
+  color: #1c211c;
+  text-align: center;
+  font-size: 17px;
+  padding: 0 10vw;
+}
+
+.FCCTributePage > section > main > ul {
+  padding-left: 2vw;
+}
+
+.FCCTributePage .title {
+  text-align: center;
+  color: #09360f;
+  font-size: 22px;
+}
+.FCCTributePage .title > p {
+  text-decoration: underline;
+}
+.FCCTributePage img {
+  width: 80%;
+  margin: auto;
+}
+
+.FCCTributePage ul {
+  text-align: left;
+}
+
+.FCCTributePage a:hover {
+  color: #283654;
+  cursor: pointer;
+}

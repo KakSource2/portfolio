@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Hanken Grotesk;
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+.ResultsSummary {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: Hanken Grotesk;
+  background-color: white;
+  height: 95vh;
+}
+
+.ResultsSummary > main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 40%;
+  height: 60%;
+  border-radius: 1rem;
+}
+
+.ResultsSummary > main > .general {
+  display: grid;
+  justify-items: center;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.ResultsSummary > main > .general > .details {
+  font-size: 1rem;
+}
+
+.ResultsSummary > main > .general > .total-score {
+  display: grid;
+  width: 125px;
+  height: 125px;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  padding: 1.35rem;
+}
+
+.ResultsSummary > main > .general > .total-score > b {
+  font-size: 3.5rem;
+}
+
+.ResultsSummary > main > .summary {
+  display: grid;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.ResultsSummary > main > .summary > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.ResultsSummary > main > .summary > div > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  justify-self: baseline;
+}
+
+.ResultsSummary > main > .summary > button {
+  border-radius: 2rem;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.102);
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.202);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.205);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.133);
+  color: hsl(234, 85%, 45%);
+}
