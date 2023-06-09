@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Comforta;
+  src: url("../../../assets/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: SlacksideOne;
+  src: url("../assets/fonts/SlacksideOne-Regular.ttf");
+}
+
+.article {
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+  margin: 4rem 0;
+
+  span {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .p1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: green;
+  }
+
+  .p2 {
+    font-weight: 200;
+    font-size: 1.4rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    width: 80vw;
+    font-size: 0.8rem;
+  }
+
+  a {
+    display: grid;
+    font-family: SlacksideOne;
+    background-color: rgb(221, 221, 221);
+    color: crimson;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  a:visited {
+    color: crimson;
+  }
+
+  img {
+    display: block;
+    max-height: 200px;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.light {
+  a {
+    background-color: black;
+  }
+
+  a:hover {
+    background-color: rgb(240, 53, 6);
+    color: white;
+  }
+  a.dark:hover {
+    background-color: red;
+  }
+}

@@ -1,0 +1,65 @@
+.Movies-login {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.Movies-login form {
+  display: grid;
+  width: 15rem;
+  height: 12rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.Movies-login form:hover {
+  animation: TMDBShadows 15s infinite;
+}
+
+@keyframes TMDBShadows {
+  0% {
+    box-shadow: 0 0.125rem 1rem 0.125rem white;
+  }
+  25% {
+    box-shadow: 0 0.325rem 3rem 0.325rem rgb(241, 91, 91);
+  }
+  75% {
+    box-shadow: 0 -0.325rem 3rem 0.325rem rgb(0, 247, 164);
+  }
+  100% {
+    box-shadow: 0 0.125rem 1rem 0.125rem rgb(0, 116, 248);
+  }
+}
+.Movies-login form label {
+  display: grid;
+  text-align: center;
+}
+
+.Movies-login form label input {
+  border-radius: 5px;
+  border: none;
+  padding: 0 5px;
+}
+
+.Movies-login form button {
+  border-radius: 1rem;
+  border: none;
+}
+
+.Movies-login form button:hover {
+  animation: Movies_login_button 2s forwards infinite ease-in-out;
+}
+
+@keyframes Movies_login_button {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: rgb(0, 174, 255);
+  }
+  100% {
+    background-color: orange;
+  }
+}

@@ -1,0 +1,33 @@
+.bushkraft {
+  display: grid;
+  background-color: white;
+  margin: 0 5vw;
+  border: 1px solid black;
+  grid-template-columns: 2fr 1fr;
+  height: 90vh;
+
+  .offers {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+
+    div {
+      width: 100%;
+    }
+
+    .suggestions {
+      display: grid;
+      gap: 10px;
+
+      div {
+        height: 120px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

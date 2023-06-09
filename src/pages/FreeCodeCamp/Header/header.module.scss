@@ -1,0 +1,45 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #0a0a23;
+  color: white;
+  padding: 0 2vw;
+  font-family: "Courier New", Courier, monospace;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-self: baseline;
+    img {
+      max-width: 50px;
+      margin: 5px;
+    }
+  }
+
+  .challenges {
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    padding: 5px;
+  }
+
+  .config__btns {
+    display: flex;
+    justify-self: flex-end;
+    gap: 15px;
+    align-items: center;
+
+    button {
+      width: 75px;
+      height: 80%;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+}
+
+.light {
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid black;
+}

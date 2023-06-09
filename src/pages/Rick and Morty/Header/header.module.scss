@@ -1,0 +1,79 @@
+@font-face {
+  font-family: TsukimiRounded;
+  src: url("./TsukimiRounded-Regular.ttf");
+}
+
+$background-color-primary-dark: black;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 0.8fr 0.2fr 0.2fr;
+  border-bottom: 2px solid black;
+  align-items: center;
+  justify-items: center;
+  font-family: TsukimiRounded;
+  height: 10vh;
+  gap: 15px;
+  padding: 0 2vw;
+  background-color: $background-color-primary-dark;
+  color: white;
+
+  img {
+    display: block;
+    max-width: 50px;
+    transition: 0.5s;
+  }
+
+  img:hover {
+    scale: 1.5;
+    transition: 0.5s;
+  }
+
+  main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: 0.1s;
+      color: white;
+    }
+    a:hover {
+      color: black;
+      background-color: white;
+      transition: 0.2s;
+    }
+  }
+}
+
+.language,
+.theme {
+  width: 70px;
+  height: 60%;
+  border: none;
+  border-radius: 25px;
+}
+
+.language:hover,
+.theme:hover {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  $backgroundColor: white;
+}
+
+// .Rick__and__Morty-Header main > .Rick__and__Morty-Header .language {
+//   border: none;
+//   height: 70%;
+//   border-radius: 1rem;
+// }

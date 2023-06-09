@@ -1,0 +1,28 @@
+@font-face {
+  font-family: TsukimiRoundedBold;
+  src: url("../../assets/fonts/TsukimiRounded-Bold.ttf");
+}
+
+.main {
+  display: grid;
+
+  main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      padding: 0 2vw;
+      font-size: 2rem;
+      font-family: TsukimiRoundedBold;
+
+      @keyframes appearenceH2 {
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}

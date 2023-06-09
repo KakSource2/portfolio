@@ -1,0 +1,89 @@
+.BestFramework {
+  background-color: white;
+}
+
+.BestFramework main {
+  display: grid;
+  padding: 2vh 5vw;
+  gap: 15px;
+}
+
+.BestFramework main > div {
+  display: grid;
+  gap: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.BestFramework .config {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.BestFramework main .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.5rem;
+}
+
+.BestFramework main h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.BestFramework .title {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.BestFramework .item {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 0 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.BestFramework .item div {
+  display: grid;
+  justify-items: center;
+}
+
+.BestFramework .item button {
+  width: 100%;
+  height: 80%;
+}
+
+.BestFramework .item > div > button {
+  width: 50%;
+}
+
+.BestFramework .JS {
+  background-color: rgb(231, 212, 3);
+}
+
+.BestFramework .NON-JS {
+  background-color: rgb(80, 141, 5);
+}
+
+.BestFramework .DataBases {
+  background-color: rgb(2, 63, 89);
+}
+
+.BestFramework .NON-PROGRAMMING-SOFTWARE {
+  background-color: green;
+}
+
+.BestFramework .METHODOLOGIES {
+  background-color: brown;
+}
+
+.BestFramework .UNKNOWN {
+  background-color: gray;
+}

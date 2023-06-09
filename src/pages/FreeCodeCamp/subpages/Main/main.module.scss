@@ -1,0 +1,39 @@
+.freecodecamp {
+  display: grid;
+  background-color: green;
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    padding: 2rem;
+
+    div {
+      border: 1px solid white;
+      width: 275px;
+      transition: 0.5s;
+      &:hover {
+        scale: 1.1;
+        transition: 0.5s;
+      }
+
+      a {
+        display: grid;
+        justify-items: center;
+        text-decoration: none;
+        font-family: "Courier New", Courier, monospace;
+
+        p {
+          text-align: center;
+          font-size: 2rem;
+        }
+        img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 0.15rem;
+        }
+      }
+    }
+  }
+}

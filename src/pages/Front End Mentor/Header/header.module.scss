@@ -1,0 +1,90 @@
+.header {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 2vw;
+  border-bottom: 2px solid orange;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  .logo {
+    img {
+      max-width: 100%;
+      display: block;
+      max-height: 8vh;
+    }
+    justify-self: baseline;
+    transition: 0.5s;
+    &:hover {
+      scale: 1.1;
+      transition: 0.5s;
+    }
+  }
+
+  .options {
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+
+    h3 {
+      letter-spacing: 2px;
+      width: 100%;
+      text-align: center;
+      color: black;
+      background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    }
+    select {
+      option {
+        text-align: center;
+      }
+    }
+  }
+
+  .config {
+    justify-self: flex-end;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+
+    button {
+      width: 75px;
+      border: none;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: orange;
+      border-radius: 5px;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      img {
+        margin: 5px;
+        max-width: 25px;
+        display: block;
+      }
+    }
+  }
+}
+
+.light {
+  background-color: white;
+
+  .config {
+    button:first-child {
+      &:hover {
+        background-color: green;
+      }
+    }
+    button:last-child {
+      &:hover {
+        background-color: rgb(255, 217, 0);
+      }
+    }
+  }
+}

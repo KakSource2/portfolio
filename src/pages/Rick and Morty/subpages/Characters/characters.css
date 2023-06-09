@@ -1,0 +1,83 @@
+.Rick_and_Morty-Characters {
+  color: white;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.Rick_and_Morty-Characters .nav-buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.Rick_and_Morty-Characters .nav-buttons button {
+  height: 35px;
+}
+
+.Rick_and_Morty-Characters main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2vw 2vw;
+  width: 100%;
+}
+
+.Rick_and_Morty-Characters main .Character {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+  background-color: rgb(66, 66, 66);
+}
+
+.Rick_and_Morty-Characters main .Character img {
+  max-width: 90%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.Rick_and_Morty-Characters main .Character:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+.Rick_and_Morty-Characters main .Character .info {
+  display: grid;
+  padding: 15px 0;
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal {
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal .status {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal h3 a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal h3 a:hover {
+  color: orange;
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal .status span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.Rick_and_Morty-Characters main .Character .info .personal .status .Alive {
+  background-color: green;
+}
+.Rick_and_Morty-Characters main .Character .info .personal .status .Dead {
+  background-color: rgb(255, 0, 0);
+}
+.Rick_and_Morty-Characters main .Character .info .personal .status .Unknown {
+  background-color: rgb(0, 0, 0);
+}

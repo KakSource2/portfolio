@@ -1,0 +1,176 @@
+.InteractiveRating {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+}
+
+.InteractiveRating > main {
+  display: grid;
+  width: 30%;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+}
+
+.InteractiveRating > main > img {
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: hsla(217, 12%, 63%, 15%);
+}
+
+.InteractiveRating > main > p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+.InteractiveRating > main > .rating {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: hsl(216, 12%, 54%);
+  gap: 0.5rem;
+}
+
+.InteractiveRating > main > .rating > button {
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(216, 12%, 54%, 25%);
+}
+
+.InteractiveRating > main > .rating > button:hover {
+  background-color: hsla(216, 12%, 54%, 100%);
+}
+
+.InteractiveRating > main > .rating > button:active {
+  background-color: hsla(25, 97%, 53%, 70%);
+  color: white;
+}
+
+.InteractiveRating > main > .submit {
+  background-color: hsla(25, 97%, 53%, 70%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  height: 30px;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.InteractiveRating > main > .submit:hover {
+  background-color: hsla(25, 97%, 53%, 100%);
+}
+
+.InteractiveRating > main > .submit:active {
+  background-color: white;
+  color: orange;
+}
+
+.InteractiveRating > .voted {
+  display: grid;
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.InteractiveRating > .voted > span {
+  color: hsla(25, 97%, 53%, 100%);
+  padding: 2px 10px;
+  border-radius: 1rem;
+  background-color: hsla(217, 12%, 63%, 20%);
+}
+
+.InteractiveRating > .voted > p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .InteractiveRating > main {
+    display: grid;
+    width: 50%;
+    height: 90%;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .InteractiveRating > main {
+    display: grid;
+    width: 65%;
+    height: 90%;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+@media (max-width: 465px) {
+  .InteractiveRating > main {
+    display: grid;
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+  }
+  .InteractiveRating > .voted {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  .InteractiveRating > main {
+    display: grid;
+    height: 60%;
+    padding: 1rem;
+    gap: 5px;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+  }
+  .InteractiveRating > main > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 400px) {
+  .InteractiveRating {
+    height: 88vh;
+  }
+  .InteractiveRating > main {
+    display: grid;
+    height: 90%;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+@media (max-height: 320px) {
+  .InteractiveRating {
+    height: 85vh;
+  }
+}
+
+@media (max-height: 250px) {
+  .InteractiveRating {
+    height: 80vh;
+  }
+}

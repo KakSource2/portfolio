@@ -1,0 +1,80 @@
+.tributepage {
+  background-color: white;
+  display: grid;
+  justify-items: center;
+  padding: 1rem;
+  gap: 0.25rem;
+
+  ul {
+    text-align: left;
+  }
+
+  a:hover {
+    color: #283654;
+    cursor: pointer;
+  }
+
+  section > main {
+    h2 {
+      text-decoration: underline;
+    }
+
+    color: #1c211c;
+    text-align: center;
+    font-size: 17px;
+    padding: 0 5vw;
+
+    ul {
+      padding-left: 2vw;
+    }
+  }
+
+  .title {
+    text-align: center;
+    color: #09360f;
+    font-size: 22px;
+
+    p {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.light {
+  background-color: black;
+  color: white;
+
+  a {
+    color: white;
+  }
+  a:hover {
+    color: rgb(71, 71, 255);
+  }
+
+  section > main {
+    color: #fad400d3;
+    ul {
+      li {
+        color: #fad4009a;
+      }
+    }
+  }
+
+  .title {
+    color: #fad400af;
+
+    p {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

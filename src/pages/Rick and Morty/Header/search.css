@@ -1,0 +1,23 @@
+.Search {
+  display: flex;
+  height: 60%;
+}
+
+.Search input {
+  background-color: rgb(8, 224, 8);
+  border: none;
+  color: white;
+  padding: 0 5px;
+  border-radius: 15px 0 0 15px;
+}
+
+.Search button {
+  border: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.Search button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5;
+}

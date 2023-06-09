@@ -1,0 +1,19 @@
+$primary-dark-background-color: black;
+$primary-dark-text-color: white;
+// $secondary-dark-background-color: black;
+// $secondary-dark-text-color: white;
+
+$primary-light-background-color: light;
+$primary-light-text-color: black;
+// $secondary-light-background-color: black;
+// $secondary-light-text-color: white;
+
+.light-mode {
+  background-color: $primary-light-background-color;
+  color: $primary-light-text-color;
+}
+
+.dark-mode {
+  background-color: $primary-dark-background-color;
+  color: $primary-dark-text-color;
+}

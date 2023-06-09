@@ -1,0 +1,14 @@
+$mobile: 800px;
+$test: red;
+
+@mixin flexDirection($direction) {
+  display: flex;
+  justify-items: $direction;
+  align-content: $direction;
+}
+
+@mixin gridDirection($direction) {
+  display: grid;
+  justify-items: $direction;
+  align-items: $direction;
+}

@@ -1,0 +1,87 @@
+.header {
+  background-color: black;
+  color: white;
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h2 {
+      font-size: 3.5rem;
+      color: orange;
+
+      b {
+        color: firebrick;
+      }
+    }
+    .navbar {
+      margin: 2px;
+      display: grid;
+      .some_btns {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        color: white;
+        a {
+          display: flex;
+          text-align: center;
+          gap: 5px;
+          align-items: center;
+        }
+      }
+      .config_btns {
+        display: grid;
+        grid-template-columns: 1fr 0.2fr 0.2fr;
+        gap: 15px;
+
+        form {
+          display: flex;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    background-color: rgb(165, 32, 8);
+    color: black;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 2px 2vw;
+    background-color: white;
+    border-bottom: 1px solid black;
+    .dropdown {
+      padding: 2px;
+      border: none;
+      background-color: white;
+      border: 1px solid black;
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &:hover {
+        background-color: firebrick;
+        color: white;
+        .dropdown_menu {
+          opacity: 1;
+          transition: 0.1s opacity ease-in-out, 0.1s transform ease-in-out;
+          transform: translateY(0%);
+        }
+      }
+    }
+
+    .dropdown_menu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 0.25rem);
+      padding: 0.75rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0.1);
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+  }
+}
