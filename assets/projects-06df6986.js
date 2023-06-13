@@ -1,0 +1,1 @@
+const e="/assets/survey-form-bb9bf7f2.png",r="/assets/tribute-page-96f2b0fe.png",s=[{id:1,name:{en:"Survey Form",es:"Formulario Encuesta"},link:"/free-code-camp/survey-form",img:e},{id:2,name:{en:"Tribute Page",es:"Página tributo"},link:"/free-code-camp/tribute-page",img:r}];export{s as p};

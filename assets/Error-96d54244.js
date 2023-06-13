@@ -1,0 +1,1 @@
+import{u as o,j as r}from"./index-5cdb3fd4.js";const n=()=>{let e=o();return console.log(e),r.jsx("div",{className:"Error",children:r.jsxs("main",{children:[r.jsx("h1",{children:"404"}),r.jsx("p",{children:"There was an error with the page you were looking for"})]})})};export{n as default};
